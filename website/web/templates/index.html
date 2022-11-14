@@ -10,7 +10,15 @@
 </head>
 <body>
    {% include "_navbar.html" %}
-    <H1>Hello {{ username }}!</H1>
+
+  {% block main %}
+      {% if username == "Uyghurjan" %}
+        <h1>its me </h1>
+      {%　elif username %}
+        <H1>Hello {{ username }}!</H1>
+        {% else %}
+        No any connection
+        {% endif %} 
     <ol id="liiii">
         <li>pip install virtualenv</li>
         <li>pip install django</li>
@@ -28,5 +36,6 @@
 
     </ol>
     {% include "_footer.html" %}
+    {% endblock %}
 </body>
 </html>

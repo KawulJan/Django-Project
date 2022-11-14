@@ -3,7 +3,7 @@
 
 {% block main %}
 <h1>Intruduce yourself</h1>
-<p> made {{ num_services|intcomma }} times setvers untill now </p>
+<p> made {{ num_services|intcomma }} times setvers untill {% now "Y.m.d  H:i" %} </p>
 <h2>skills</h2>
 <ul>
    {% for skill in skills %}
