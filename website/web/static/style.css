@@ -1,0 +1,21 @@
+
+body{
+    position: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    background: pink;
+}
+
+#liiii {
+color: rgb(11, 132, 238);
+font-size: 22px;
+}
+
+img {
+    width: 600px;
+    height: 370px;
+    border: 2px solid palevioletred;
+}

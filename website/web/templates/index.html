@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+   {% include "_navbar.html" %}
+    <H1>Hello {{ username }}!</H1>
+    <ol id="liiii">
+        <li>pip install virtualenv</li>
+        <li>pip install django</li>
+        <li>python -m dajango startproject website</li>
+        <li>cd website</li>
+        <li>python manage.py runserver </li>
+        <img src="{% static 'Django.png' %}" >
+        <li>python manage.py startapp web </li>
+        <li>website --> setting --> add 'web'</li>
+        <img src="{% static 'Capture10.png' %}" >
+        <li>setting urls.py in the website </li>
+        <img src="{% static 'Capture12.png' %}" >
+        <li>add urls in the web</li>
+        <img src="{% static 'Capture11.png' %}" >
+
+    </ol>
+    {% include "_footer.html" %}
+</body>
+</html>
